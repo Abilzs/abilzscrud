@@ -1,0 +1,389 @@
+/* Global styles */
+body {
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+    
+    .form-box {
+        position: relative;
+        width: 100%;
+    }
+    
+    .button-box {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .toggle-btn {
+        background-color: #fff;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        width: 50%;
+        border-radius: 5px 5px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .toggle-btn:hover {
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form {
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .form input {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .form button {
+        background-color: #ff7e5f;
+        border: none;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .form button:hover {
+        background-color: #feb47b;
+    }
+    
+    .form h2 {
+        margin: 0 0 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    #login-form {
+        display: block;
+    }
+    
+    #register-form {
+        display: none;
+    }
+    
+    
+    font-family: 'Arial', sans-serif;
+    background-color: #134e57;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    body {
+        background-color: #6d4943; /* Ganti dengan kode warna yang Anda inginkan */
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #00695c;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara gambar dan teks */
+}
+
+nav .logo img {
+    height: 40px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    width: auto; /* Menjaga rasio aspek gambar */
+}
+
+nav .logo a {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #80cbc4;
+}
+
+/* Konten Utama */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px; /* Menambahkan margin untuk memberi ruang bagi navbar */
+    animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+}
+
+.auth-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.buttonbalik {
+    background-color: #43B153;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+.tab button.active {
+    background-color: white;
+    color: #00796b;
+    border-bottom: 1px solid transparent;
+}
+
+.tab button:hover {
+    background-color: #004d40;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+.tabcontent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabcontent label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.tabcontent input[type="text"],
+.tabcontent input[type="password"],
+.tabcontent input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.tabcontent input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabcontent input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+
+/* Konten Utama */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px; /* Menambahkan margin untuk memberi ruang bagi navbar */
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #444;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Tombol Kembali */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #004d40;
+}
+
+/* Bagian Responsif */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+
+
+

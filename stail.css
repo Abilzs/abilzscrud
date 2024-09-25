@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #134e57, #134e57);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Main Content */
+.container {
+    width: 90%;
+    max-width: 1900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8.px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin-top: 35cm;
+    margin-bottom: 5cm;
+}
+
+/* Heading Style */
+h1 {
+    color: #134e57;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Extracurricular Buttons */
+.extracurricular-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.extracurricular-list button {
+    background-color: #43B153;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.extracurricular-list button:hover {
+    background-color: #388E3C;
+}
+
+/* Register Button */
+.register-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #004d40;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #00695c;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .logo img {
+    height: 40px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    width: auto;;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #80cbc4;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .extracurricular-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Styling the card container to use Flexbox */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Evenly distribute the cards */
+    gap: 20px; /* Space between the cards */
+    margin: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 30%; /* 3 cards per row */
+    max-width: 300px; /* Prevents the cards from growing too wide */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.buttonbalik {
+    background-color: #134e57;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+/* Styling the card images */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling the card titles */
+.card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling the card descriptions */
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+}
