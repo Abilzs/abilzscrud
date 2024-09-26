@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - SMKN 3 Yogyakarta</title>
-    <link rel="stylesheet" href="style.css"> <!-- Hubungkan dengan file CSS eksternal -->
-    <link rel="icon" type="image/x-icon" href="gambar/skm.png">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Hubungkan dengan file CSS eksternal -->
+    <link rel="icon" type="image/x-icon" href="../gambar/skm.png">
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo">
-        <img src="skm.png" alt="Logo SMKN 3 Yogyakarta">
+        <img src="../gambar/skm.png" alt="Logo SMKN 3 Yogyakarta">
             <a href="#">SMKN 3 Yogyakarta</a>
         </div>
     </nav>
@@ -21,8 +21,8 @@
         <div class="auth-box">
             <!-- Tab untuk Login/Register -->
             <div class="tab">
-                <button class="tablinks active" onclick="openTab(event, 'Login')">Login</button>
-                <button class="tablinks" onclick="openTab(event, 'Register')">Daftar</button>
+                <button class="button" onclick="openTab(event, 'Login')">Login</button>
+                <button class="button" onclick="openTab(event, 'Register')">Daftar</button>
             </div>
 
             <!-- Login Form -->
@@ -37,6 +37,9 @@
                     
                     <input type="submit" value="Login">
                 </form>
+                <br>
+                <!-- Button Admin -->
+                <small class="smalladmin"><a href="../admin/loginadmin.php">Admin?</a></small>
             </div>
 
             <!-- Register Form -->

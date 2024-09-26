@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Ekstrakurikuler - SMKN 3 Yogyakarta</title>
-    <link rel="stylesheet" href="style.css"> <!-- Hubungkan dengan file CSS eksternal -->
-    <link rel="icon" type="image/x-icon" href="gambar/skm.png">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Hubungkan dengan file CSS eksternal -->
+    <link rel="icon" type="image/x-icon" href="../gambar/skm.png">
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo">
-            <img src="skm.png" alt="Logo SMKN 3 Yogyakarta">
+            <img src="../gambar/skm.png" alt="Logo SMKN 3 Yogyakarta">
             <a href="#">SMKN 3 Yogyakarta</a>
         </div>
         <ul>
@@ -23,7 +23,7 @@
             session_start(); // Memulai sesi
             if (isset($_SESSION['username'])) {
                 // Jika pengguna sudah login, tampilkan tombol logout
-                echo '<li><a href="logout.php">Logout (' . htmlspecialchars($_SESSION['username']) . ')</a></li>';
+                echo '<li><a href="../login/logout.php">Logout (' . htmlspecialchars($_SESSION['username']) . ')</a></li>';
             } else {
                 // Jika pengguna belum login, tampilkan tombol login
                 echo '<li><a href="login.php">Login</a></li>';
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type='hidden' name='ekstrakurikuler' value='$ekstrakurikuler'>
                     <button type='submit' class='button'>Unduh Detail Pendaftaran (WAJIB)</button>
                 </form>
-                <a href='index.php' class='button'style='margin-top: 10px;'>Kembali ke Halaman Beranda</a>
+                <a href='../login/index.php' class='button'style='margin-top: 10px;'>Kembali ke Halaman Beranda</a>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Pendaftaran Gagal!</h2>
             <p>Terdapat masalah saat menyimpan data. Silakan coba lagi.</p>
             <div class='button-container'>
-                <a href='index.php'><button>Kembali ke Halaman Utama</button></a>
+                <a href='../login/index.php'><button>Kembali ke Halaman Utama</button></a>
             </div>
         </div>";
     }
@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Akses Tidak Sah!</h2>
         <p>Halaman ini hanya dapat diakses setelah pengiriman form.</p>
         <div class='button-container'>
-            <a href='index.php' class='button'>Kembali ke Halaman Utama</a>
+            <a href='../login/index.php' class='button'>Kembali ke Halaman Utama</a>
         </div>
     </div>";
 }

@@ -6,29 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Ekstrakurikuler - SMKN 3 Yogyakarta</title>
-    <link rel="stylesheet" href="style.css"> <!-- Hubungkan dengan file CSS eksternal -->
-    <link rel="icon" type="image/x-icon" href="gambar/skm.png">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Hubungkan dengan file CSS eksternal -->
+    <link rel="icon" type="image/x-icon" href="../gambar/skm.png">
 </head>
 <body>
     <!-- Navbar -->
     <nav>
     <div class="logo">
-        <img src="skm.png" alt="Logo SMKN 3 Yogyakarta">
+        <img src="../gambar/skm.png" alt="Logo SMKN 3 Yogyakarta">
         <a href="#">SMKN 3 Yogyakarta</a>
     </div>
     <ul>
-        <li><a href="index.php">Beranda</a></li>
-        <li><a href="about.php">Tentang</a></li>
-        <li><a href="contact.php">Kontak</a></li>
+        <li><a href="../login/index.php">Beranda</a></li>
+        <li><a href="../about/about.php">Tentang</a></li>
+        <li><a href="../kontak/contact.php">Kontak</a></li>
         
         <?php
         session_start(); // Memulai sesi
         if (isset($_SESSION['username'])) {
             // Jika pengguna sudah login, tampilkan tombol logout
-            echo '<li><a href="logout.php">Logout (' . htmlspecialchars($_SESSION['username']) . ')</a></li>';
+            echo '<li><a href="../login/logout.php">Logout (' . htmlspecialchars($_SESSION['username']) . ')</a></li>';
         } else {
             // Jika pengguna belum login, tampilkan tombol login
-            echo '<li><a href="login.php">Login</a></li>';
+            echo '<li><a href="../login/login.php">Login</a></li>';
         }
         ?>
     </ul>

@@ -1,5 +1,5 @@
 <?php
-require('fpdf/fpdf.php'); // Pastikan kamu telah mengunduh dan menyertakan library FPDF
+require('../fpdf/fpdf.php'); // Pastikan kamu telah mengunduh dan menyertakan library FPDF
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama = $_POST['nama'];
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $y = ($pdf->GetPageHeight() - $imgHeight) / 2; // Posisi Y untuk di tengah secara vertikal
 
     // Menambahkan gambar di tengah
-    $pdf->Image('gambar/skm.png', 80, 10, 50, 50);
+    $pdf->Image('../gambar/skm.png', 80, 10, 50, 50);
 
 
     // Menambahkan teks di bawah gambar
